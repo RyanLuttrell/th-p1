@@ -74,7 +74,7 @@ header .profile-image {
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(1440deg);
 }
 
 .experience-header {
@@ -175,6 +175,18 @@ a.social:hover {
   clear: both;
 }
 
+input {
+  display: block;
+  margin: 15px 0;
+  height: 40px;
+  width: 300px;
+}
+
+textarea {
+  width: 300px;
+  font-family: 'Roboto', sans-serif;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -185,6 +197,15 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+  }
+
+  .flex-contact {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex; 
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
   }
 
   header {
